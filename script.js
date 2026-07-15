@@ -1,6 +1,5 @@
  let pin = +prompt("pin batao");
-   
-if(pin === 1234){
+   if(pin === 1234){
     let choice = +prompt(`
     ===ATM simulator=====
     1.check balance
