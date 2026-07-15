@@ -1,10 +1,13 @@
-let choice = +prompt(`
+ let pin = +prompt("pin batao");
+   
+if(pin === 1234){
+    let choice = +prompt(`
     ===ATM simulator=====
     1.check balance
     2.deposit
     3.withdraw
     4.exit`);
-    let attempts = 0;
+  let attempts = 0;
     let balance = 5000;
     let withdraw;
 switch(choice){
@@ -16,7 +19,7 @@ switch(choice){
          console.log("deposit");
         let deposit = +prompt("Enter the deposit amount");
         balance = balance + deposit;
-        console.log(`after the deposit your current balance is = ${deposit}`);
+        console.log(`after the deposit your current balance is = ${balance}`);
          break;
     case 3:
         console.log("withdraw");
@@ -46,3 +49,8 @@ console.log(`your current balance is = ${balance} `);
         console.log("invalid choice");
         break;
 }
+ 
+}
+  else {
+    console.error("You Entered wrong pin");
+  }
