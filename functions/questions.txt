@@ -1,0 +1,33 @@
+Level 4 – Functions
+Create a function to print "Hello".
+Create a function that returns the square of a number.
+Create a function to add two numbers.
+Create a function to check even or odd.
+Create a function to find the larger of two numbers.
+Create a function to calculate the sum from 1 to n.
+Create a function to count even numbers from 1 to n.
+Create a function to print numbers from n to 1.
+Create a function to return the cube of a number.
+Create a function to check if a number is divisible by 5.
+Level 5 – Logic Building
+Print the first 10 multiples of 7.
+Print all numbers between 1 and 100 that are divisible by 4 but not by 8.
+Find the sum of numbers from 50 to 100.
+Count numbers divisible by both 4 and 6.
+Find the average of numbers from 1 to 20.
+Print all numbers whose square is less than 500.
+Find the sum of the first 20 odd numbers.
+Find the sum of the first 20 even numbers.
+Count how many numbers from 1 to 100 are divisible by 9.
+Print numbers from 100 to 1, skipping multiples of 10.
+Level 6 – Challenge
+Reverse a number (e.g. 1234 → 4321)
+Count the digits in a number.
+Find the sum of digits of a number.
+Check if a number is a palindrome.
+Check if a number is an Armstrong number.
+Find the factorial of a number.
+Find the highest digit in a number.
+Find the lowest digit in a number.
+Print the multiplication table of a number.
+Print all prime numbers from 1 to 100.
