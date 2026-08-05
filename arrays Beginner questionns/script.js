@@ -1,9 +1,3 @@
-// question no.1 
-let arr = [10,20,30,40];
-let newarr = (val) => {
-    console.log(val)
-}
-newarr(arr);
 // question no.2
 let num = [10,20,30];
 let sum = num.reduce(function(finalval,recieved){
@@ -113,3 +107,46 @@ let pw = [...ko,...ds];
 // question 18 
 let as = [10,20,30];
 let pq = [...as];
+// question 19  
+let arr = ["HTML","CSS","React"] ;
+arr.pop()
+arr.push("javasccript","react")
+console.log(arr);
+
+// question 20
+let nums = [1,2,3,4,5,6,7,8,9,10];
+let newnum = nums.filter(function(val){
+    return val % 2 == 0;
+})
+let finalnum = newnum.map(function(newval){
+    return newval*10;
+})
+console.log(finalnum);
+// question 21
+let reversenum = [5,10,15,20,25];
+reversenum.reverse();
+reversenum.shift();
+console.log(reversenum);
+// question 22
+let hr = [100,200,300];
+hr.push(400);
+hr.unshift(50);
+console.log(hr);
+// question 23
+let alpha = ["A","B","C","D","E"];
+alpha.splice(1,3);
+alpha.pop();
+alpha.push("X","Y","E");
+console.log(alpha);
+// question 24
+let checkEven = [11,22,33,44,55];
+let ans = checkEven.every(function(checkval){
+    return checkval
+});
+console.log(ans);
+// question 25
+let original = [10,20,30,40,50];
+console.log(original)
+let copy = [...original];
+copy.reverse();
+console.log(copy);
