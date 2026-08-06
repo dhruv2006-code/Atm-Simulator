@@ -5,9 +5,13 @@ let sum = num.reduce(function(finalval,recieved){
 },0);
 // question no.3
 let largest = [8,15,2,90,35];
-let finallargest = largest.filter(function(Lnum){
-    return Lnum>35;
-})
+let large = largest[0];
+for(let i = 0; i<largest.length; i++){
+    if(largest[i]>large) {
+      large = largest[i]
+    }
+}
+console.log(large);
 // question no.4
 let small = [8,15,2,90,35];
 let smallest = small[0];
@@ -31,7 +35,7 @@ console.log(count);
 let newrandomNum = [1,2,4,5,6,7,8];
 let oddcount = 0;
 for(let i = 0; i<newrandomNum.length; i++){
-    if(newrandomNum[i] % 2 === 0) {
+    if(newrandomNum[i] % 2 === 1) {
      oddcount++;
     }
 }
@@ -44,8 +48,8 @@ console.log(oddcount);
 let ah = [10,20,30];
 ah.push(40,50);
 // question 2
-let gr = ["html","css"]
-gr.push("javascript","react");
+let gr = ["html","css","react"]
+gr.splice(2,0,"javascript");
 // question 3
 let empty = [];
 empty.push(1,2,3,4,5);
@@ -90,7 +94,8 @@ let ok = ni.some(function(ja){
 // question 14
 let op = [2,4,6,8,10];
 let ew = op.every(function(he){
-    return he;
+           return he;
+   
 })
 // question 15
 let lk = [10,20,30,40];
@@ -141,7 +146,9 @@ console.log(alpha);
 // question 24
 let checkEven = [11,22,33,44,55];
 let ans = checkEven.every(function(checkval){
-    return checkval
+  if(checkval>10){
+      return checkval;
+  }
 });
 console.log(ans);
 // question 25
