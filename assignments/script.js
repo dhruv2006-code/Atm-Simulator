@@ -59,3 +59,30 @@ let obj2 = {
         console.log("time's up")
       },2000)
 }
+
+let higher = function(newfnc){
+      newfnc();
+      newfnc();
+}
+higher(function(){
+  console.log("this is H.O.F second question")
+})
+
+let pure = function(a,b){
+      console.log(a+b);
+}
+pure(21,98);
+pure(21,98);
+let counter = 0;
+let impure = function(){
+  counter++;
+  console.log(counter)
+}
+impure();
+impure();
+
+let destruct = function ({name,age}){
+  console.log(name,age)
+}
+destruct({name: "arthav", age: "86"});
+
