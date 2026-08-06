@@ -30,3 +30,26 @@ let newobj = {
     }
 }
 newobj.callingfunction();
+
+let details = {
+    name: "dhruv",
+    age: 20,
+    city: "new delhi",
+}
+
+let car = {
+    brand: "BMW",
+    model: "m5",
+    price: 5000000000,
+}
+console.log(car.price);
+
+let student = {
+    name:"arav",
+    age:27,
+}
+student.age = 38;
+
+let employee = {
+}
+employee.salary = 200000;
