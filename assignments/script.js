@@ -86,3 +86,54 @@ let destruct = function ({name,age}){
 }
 destruct({name: "arthav", age: "86"});
 
+let testing = {
+  name:"arya",
+  fnc: function(){
+    console.log(this);
+  }
+}
+
+testing.fnc();
+
+let num = [21,324,32,54,21];
+let numans = num.map(function(numval){
+    return numval*numval
+});
+
+console.log(numans);
+
+let findeven = [12,23,444,43,12,43,65,8888];
+let evenans = findeven.filter(function(findval){
+  return findval%2 === 0;
+})
+console.log(evenans);
+
+let salary = [10000,20000,30000];
+let total = salary.reduce(function(acc,mainsal){
+  return acc+mainsal;
+})
+console.log(total);
+let newarr = ["dhruv","avinash","azeem","adi"];
+let finalname = newarr.every(function(names){
+    if(newarr.length>3){
+      return names
+    }
+})
+console.log(finalname);
+
+let user = {
+  name:"avinash",
+  age:16,
+}
+Object.freeze(user);
+user.city = "bhopal";
+user.age = 32;
+
+let nst = {
+  name:"dhruv",
+  age:32,
+  address:{
+    city:"new Delhi"
+  }
+}
+let {city} = nst.address
