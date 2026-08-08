@@ -3,3 +3,10 @@
     height: 200px;
     background-color: gold;
 }
+button{
+    background-color: pink;
+    color: black;
+    border: none;
+    padding: 1rem;
+    margin: 1rem;
+}
