@@ -18,4 +18,30 @@ let heading = document.querySelector("#heading");
 console.log(heading)
 // question 18
 let p = document.querySelectorAll("p");
-console.log(p)
+console.log(p);
+
+let allBtn = document.querySelectorAll('button');
+allBtn.forEach(function(elem){
+    elem.addEventListener('click',function(){
+        if(elem.innerHTML == 'add friend'){
+            elem.innerHTML == 'remove';
+        }else{
+            elem.innerHTML == 'add friend';
+        };
+    })
+})
+var allBtn = document.querySelectorAll('button')
+
+allBtn.forEach(function(elem){
+elem.addEventListener('click',function(){
+
+    if(elem.innerHTML == 'Add Friend'){
+        elem.innerHTML = 'Remove'
+    }else{
+        elem.innerHTML = 'Add Friend'
+    }
+    
+})
+
+
+})
