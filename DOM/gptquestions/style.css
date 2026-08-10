@@ -11,6 +11,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+main{
+    display: flex;
 }
 button{
     padding: 1rem 1rem;
@@ -20,4 +24,9 @@ button{
     border: none;
     font-size: 1rem;
     margin: 1rem;
+    position: relative;
+    z-index: 9999;
+}
+button:active{
+    scale: 0.80;
 }
