@@ -1,6 +1,3 @@
-body{
-   
-}
 main{
      display: flex;
     align-items: center;
@@ -19,7 +16,6 @@ main{
     justify-content: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    
 }
 button{
     background-color: pink;

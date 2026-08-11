@@ -27,3 +27,26 @@ btn.addEventListener("click",function(){
   box.style.backgroundImage = `url("${teams[hii].img}")`;
   box.innerHTML = `${teams[hii].team}`
 })
+// question 2
+let h1 = document.createElement('h1');
+h1.innerHTML = "Hello Dom"
+document.querySelector('main').appendChild(h1);
+// question 3
+let p = document.createElement('p')
+p.innerHTML = "Learning Javascript";
+document.querySelector("#container").prepend(p);
+// question 4
+let Btn = document.createElement('button');
+Btn.innerHTML = "Click me";
+document.querySelector('body').appendChild(Btn);
+Btn.style.backgroundColor = "black";
+Btn.style.color = "red";
+// question 5
+let h2 = document.createElement('h2');
+document.querySelector("#container").appendChild(h2)
+h2.innerHTML = "hii somebody"
+// question 6
+let li = document.createElement("li");
+li.innerHTML = "javascript";
+document.querySelector("ul").appendChild(li);
+
