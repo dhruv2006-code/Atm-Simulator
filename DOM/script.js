@@ -1,15 +1,20 @@
-let a = document.createElement('a');
-a.setAttribute("href","https://sheryians.com");
-a.setAttribute("target","_blank");
-a.textContent = "link";
-document.querySelector('body').appendChild(a);
+let li = document.createElement('li');
+let li2 = document.createElement('li');
+let li3 = document.createElement('li');
+li.textContent = "Html";
+li2.textContent = "css";
+li3.textContent = "javascript";
+document.querySelector('ul').appendChild(li);
+document.querySelector('ul').appendChild(li2);
+document.querySelector('ul').appendChild(li3);
 // question 2
-let img = document.querySelector('img');
-img.removeAttribute('alt')
-console.log(img)
-// question 3
-let box = document.querySelector(".box");
-let p = document.createElement("p");
-p.innerHTML = "new Paragraph";
-p.style.color = "red"
-box.appendChild(p);
+let div = document.querySelector('div');
+let p1 = document.createElement('p');
+let p2 = document.createElement('p');
+let p3 = document.createElement('p');
+p1.textContent = "name:rahul";
+p2.textContent = "age:20";
+p3.textContent = "course:javscript";
+document.querySelector('div').appendChild(p1);
+document.querySelector('div').appendChild(p2);
+document.querySelector('div').appendChild(p3);
