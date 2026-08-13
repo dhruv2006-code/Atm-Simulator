@@ -23,3 +23,23 @@ btn.addEventListener('click',function(){
      
     }, time*100);
 })
+// progress bar 2
+let btn2 = document.querySelector('.btn2');
+let progress2 = document.querySelector('.inner2');
+let newh2 = document.querySelector('#newh2');
+let box2 = document.querySelector('.box2');
+let val2 = 0;
+btn2.addEventListener('click',function(){
+    const time2 = 3+ Math.floor(Math.random()*8);
+    btn2.style.pointerEvents = 'none';
+    btn2.style.backgroundColor = 'red';
+    let timing2 = setInterval(() => {
+        val2++;
+        newh2.innerHTML = val2;
+        progress2.style.width = val2+'%';
+    }, time2);
+    setTimeout(() => {
+        clearInterval(timing2);
+        btn2.textContent = "File Uploaded";
+    }, time2*100);
+});
