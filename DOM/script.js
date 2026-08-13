@@ -1,21 +1,25 @@
-let div = document.querySelector('#container');
-let h1 = document.createElement('h1');
-h1.textContent = "hii this is an h1";
-let p = document.createElement('p');
-p.textContent = "hii this is an p";
-div.appendChild(h1)
-div.prepend(p);
-// question 2
-let random = Math.floor(Math.random()*101);
-const newdiv = document.createElement('div');
-newdiv.innerHTML = random;
-document.querySelector('body').appendChild(newdiv);
-// question 3
-const div2 = document.querySelectorAll('#box');
-let randomBox = Math.floor(Math.random()*div2.length);  
-let finalVal = div2[randomBox];
-const h2 = document.createElement('h2');
-h2.innerHTML = "Lucky Box!";
-finalVal.append(h2);
-document.querySelector('body').append(finalVal);
-
+let btn = document.querySelector('button');
+let progress = document.querySelector('.inner');
+let h2 = document.querySelector('h2');
+let Newtime = document.createElement('h1');
+let box = document.querySelector('.box');
+let val = 0;
+btn.addEventListener('click',function(){
+    let time = 50 + Math.floor(Math.random()*50);
+    btn.style.pointerEvents = 'none';
+    btn.style.backgroundColor = "grey";
+          Newtime.innerHTML = `your video is downloaded in ${time/10} Seconds`;
+        Newtime.style.color = "red";
+           box.appendChild(Newtime);
+   let timing = setInterval(function(){
+        val++;
+        h2.innerHTML = val+'%';
+        progress.style.width = val+'%'
+  
+    },time)
+    setTimeout(() => {
+        clearInterval(timing);
+        console.log("congrats video is downloaded");
+     
+    }, time*100);
+})
