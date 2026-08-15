@@ -13,4 +13,34 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: black;
+}
+.card{
+    width: 400px;
+    height: 450px;
+    background-color: beige;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+.card img{
+    height: 80%;
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+
+}
+.card h1{
+    font-size: 5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card i{
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    top: 50%;
+    opacity: 0;
 }
