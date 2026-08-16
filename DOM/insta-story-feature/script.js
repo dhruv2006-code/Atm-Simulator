@@ -26,7 +26,17 @@ let arr = [
 let clutter = "";
 arr.forEach(function(elem,index){
     clutter = clutter +`<div class="story">
-                <img src="${elem.dp}" alt="">
+                <img id="${index}" src="${elem.dp}" alt="">
             </div>`
 })
 stories.innerHTML = clutter;
+stories.addEventListener('click',function(details){
+   let finalStory = (arr[details.target.id].story);
+   document.querySelector('.full-screen').style.display = "block";
+    document.querySelector('.full-screen').style.backgroundImage = `url(${finalStory})`;
+   setTimeout(() => {
+      document.querySelector('.full-screen').style.display = "none";
+   }, 2000);
+
+
+})
