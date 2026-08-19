@@ -1,4 +1,12 @@
-let btn = document.querySelector('button');
-btn.addEventListener('click',function(){
-  console.log("HelLo Javascript")
+let box = document.querySelector('.box');
+box.addEventListener('mouseenter',function(){
+  console.log("Mouse Entered");
+  
+})
+box.addEventListener('mouseleave',function(){
+  console.log("Mouse left");
+  
+})
+box.addEventListener('mousemove',function(dets){
+  console.log(`${dets}`);
 })
