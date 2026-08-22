@@ -1,4 +1,4 @@
-let keys = document.querySelectorAll('.key')
+let keys = document.querySelectorAll('.key');
 let sound = {
     a:"a.mp3",
     s:"s.mp3",
@@ -9,11 +9,13 @@ let sound = {
     j:"j.mp3",
     k:"k.mp3"
 }
-   window.addEventListener('keydown',function(elem){
-        let note = elem.key;
-
-        if(sound[note]){
-            let audio = new Audio (sound[note])
-            audio.play()
-        }
-   })
+window.addEventListener('keydown',function(elem){
+   let note = elem.key;
+// upper line will give you the word which will be saved in note variable
+   if(sound[note]){
+    // this condition verifies that if your pressed existed in sound object
+    let audio = new Audio(sound[note]);
+    // it will make sure that the exact key pressed should play correct vocal
+    audio.play();
+   }
+})
