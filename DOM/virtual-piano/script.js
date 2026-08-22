@@ -13,7 +13,7 @@ keys.forEach(function(val){
     val.addEventListener('click',function(){
         let note = val.getAttribute('data-note');
         let audio = new Audio(sound[note]);
-      audio.play()
+      audio.play();
         
     })
     
