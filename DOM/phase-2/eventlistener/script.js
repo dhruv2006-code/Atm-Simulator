@@ -40,4 +40,3 @@ people.forEach(function(card){
   
 })
 main.innerHTML = cardPrint;
-

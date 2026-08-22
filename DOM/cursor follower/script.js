@@ -1,6 +1,6 @@
-let main = document.querySelector('main');
-let cur = document.querySelector('.cursor');
-main.addEventListener('mousemove',function(details){
-    cur.style.left = details.x+'px';
-    cur.style.top = details.y+'px';
+let body = document.querySelector('body')
+let big = document.querySelector('.big')
+body.addEventListener('mousemove',function(details){
+    big.style.top = details.y + "px"
+    big.style.left = details.x + "px"
 })
