@@ -9,12 +9,11 @@ let sound = {
     j:"j.mp3",
     k:"k.mp3"
 }
-keys.forEach(function(val){
-    val.addEventListener('click',function(){
-        let note = val.getAttribute('data-note');
-        let audio = new Audio(sound[note]);
-      audio.play();
-        
-    })
-    
-})
+   window.addEventListener('keydown',function(elem){
+        let note = elem.key;
+
+        if(sound[note]){
+            let audio = new Audio (sound[note])
+            audio.play()
+        }
+   })
